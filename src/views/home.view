@@ -1,0 +1,863 @@
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Signika:wght@700&display=swap');
+body{
+    /* background: linear-gradient(to bottom, #acdef2 10%, white 80%); */
+    background: linear-gradient(to bottom, #e1f6ff 0%, white 25%);
+}
+li{
+    list-style: none;
+}
+ul{
+    padding: 0;
+}
+.mainTitle{
+    font-family: 'Signika', sans-serif;
+    left: 120px;
+    top: 50%;
+    translate: 0 -50%;
+}
+.bigCircle{
+    background-color: #6e74c8;
+    width: 1200px;
+    top: -320px;
+    left: -100px;
+}
+.smallCircle{
+    background-color: #4e4ea1;
+    width: 50%;
+    top: 20%;
+}
+.yellowSmallCircle{
+    border: 10px solid #fff29f;
+    width: 50px;
+    bottom: 70%;
+    translate: -25%;
+}
+.roundBorderPink{
+    border: 10px solid #ff758d;
+    width: 55%;
+    top: -40%;
+    left: 5%;
+    border-radius: 170px;
+}
+.roundBorderBlue{
+    border: 10px solid #68b9ff;
+    width: 180px;
+    top: -200px;
+    right: -50px;
+    border-radius: 150px;  
+}
+.imageContainer{
+    bottom: 50%;
+    translate: 0 50%;
+    right: 50px;
+}
+.borderLeft{
+    border-top-left-radius: 200px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+.borderRight{
+    border-bottom-left-radius: 200px;
+    border-bottom-right-radius: 200px;
+    border-top-left-radius: 200px;
+}
+.img{
+    background-color: #b1b1b1;
+}
+.shadowLeft{
+    border: 5px solid #68b9ff;
+}
+.shadowRight{
+    border: 5px solid #ff758d;
+}
+.shadowLeft{
+    top: -30px;
+    left: 20px;
+    z-index: -1;
+}
+.shadowRight{
+    top: 30px;
+    left: 20px;
+    z-index: -1;
+}
+.shadowYellowCircle{
+    border: 10px solid #fff29f;
+    width: 100px;
+    translate: -50%;
+    bottom: -30px;
+    z-index: -1;
+}
+
+.img{
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.img.borderRight{
+    background-position:  center !important;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items:end;
+    height: 60px;
+}
+.navMenu{
+    color: #22226a;
+}
+.navMenu a:hover{
+    background: white;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    border-bottom-left-radius: 40px;
+}
+.blueTitle{
+    color: #8ed1ff;
+}
+.purpleTitle{
+    color: #22226a;
+}
+.connect{
+    margin: 0 auto;
+}
+.circles{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.circle{
+    background: #ebf6ff;
+}
+.whiteCircle{
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.2);
+}
+.whiteCircle.first{
+    bottom: 14%;
+    left: 22%;
+}
+.whiteCircle.second{
+    top: 12%;
+    right: -10%;
+}
+.whiteCircle.third{
+    top: 18%;
+    left: 20%;
+}
+.iconCircle.first{
+    background-color: #8fd2ff;
+    bottom: 0%;
+    right: -2%;
+}
+.iconCircle.second{
+    background-color: #ff758d;
+    top: 25%;
+    right: 8%;
+}
+.iconCircle.third{
+    background-color: #8e96ff;
+    bottom: 12%;
+    right: 8%;
+}
+.standardImg{
+    background-size: cover !important;
+    border-top-right-radius: 100px;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+.standardImg2{
+    background-size: cover !important;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+.standardSection p{
+    color: #74748b;
+}
+.standardSection button{
+    background-color: #4e4ea1;
+    border: none;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.circleContain{
+    width: 150px;
+}
+.downloadBtn{
+    background-color: #22226a;
+}
+.features .circleContain{
+    width: 100px;
+}
+.features .whiteCircle{
+    top: 10px;
+    left: 0px;
+}
+.features .iconCircle{
+    top: 15px;
+    left: 10px;
+    background: #8e96ff;
+}
+.homeImg{
+    background-repeat: no-repeat !important;
+    background-position: top right;
+    background-size: cover !important;
+}
+.homeFeature{
+    right: 150px;
+    border-top-left-radius: 80px;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    background-color: #fb6585;
+    top: -200px;
+}
+.homefeatureimg{
+    border-bottom-right-radius: 80px;
+    border-radius: inherit;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.homeImgContainer{
+    display: flex;
+    justify-content: end;
+}
+.navbar.bg, .navbar.bg .navMenu{
+    background-color: #4e4ea1;
+    align-items: center;
+    color: white;
+}
+.navbar.bg .navMenu a:hover{
+    color: #22226a;
+}
+.footer{
+    background-color: #ecf9ff;
+}
+.inputBtn{
+    background-color: #fb6585;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.input input::placeholder{
+    font-size: 20px;
+    color: #6e71b5;
+    font-weight: 200;
+}
+.footerMenu, .bottomfooter{
+    margin: 0 auto;
+}
+.rightfooter, .bottomfooter{
+    color: #2c2d76;
+}
+.logo{
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+.big{
+    width: 1200px;
+    background-color: #9ea8f1;
+    left: -200px;
+}
+.small{
+    background-color: #4e4ea1;
+    top: 285px;
+}
+.smallBlue{
+    border: 10px solid #68b9ff;
+    left: 120px;
+    top: -40px;
+}
+.bigyellow{
+    width: 50px;
+    border: 10px solid #fff29f;
+    right: 20px;
+    top: 350px;
+}
+.lightLeftBlue{
+    width: 1200px;
+    background-color: #e7f8ff;
+    left: -750px;
+    top: -100px;
+}
+.lightRightBlue{
+    width: 1200px;
+    background-color: #f4f9ff;
+    right: -950px;
+    top: 150px;
+}
+.lightBlueLeftLast{
+    width: 600px;
+    background-color: #e7f8ff;
+    left: -450px;
+    top: -300px;
+}
+.roundBorderLight{
+    border: 8px solid #f4f9ff;
+    width: 250px;
+    border-top-left-radius: 125px;
+    border-top-right-radius: 125px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    right: -270px;
+    top: -150px;
+}
+.roundBorderLightBigger{
+    border: 8px solid #f4f9ff;
+    width: 250px;
+    border-top-left-radius: 125px;
+    border-top-right-radius: 125px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    right: -150px;
+    top: -30px;
+}
+.shadow1{
+    border: 8px solid #f9fafd;
+    width: 180px;
+    border-top-left-radius: 75px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    left: 250px;
+    top: 10px;
+}
+.shadow2{
+    border: 8px solid #f9fafd;
+    width: 160px;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+    left: 150px;
+    top: 150px;
+}
+.features .circleContain{
+    width: 90px;
+}
+.letter{
+    background-color: #22226a;
+    margin: 0 auto;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.input{
+    height: 50px;
+    top: 50%;
+    translate: 0 -50%;
+    right: -50px;
+}
+.input input{
+    background-color: #2c2d76;
+    color: #6e71b5;
+    right: 190px;
+}
+.google{
+    background-repeat: no-repeat !important;
+    left: 120px;
+    top: 55%;
+}
+@media all and (max-width:1200px){
+    .bigCircle{
+        top: -340px;
+        left: -220px;
+    }
+    .smallCircle{
+        background-color: #4e4ea1;
+        width: 55%;
+        top: 18%;
+        left:5%;
+    }
+}
+@media all and (max-width:1024px){
+    .bigCircle{
+        width: 1000px;
+        top: -200px;
+        left: -240px;
+    }
+    .homeFeature{
+        right: 40px;
+        top: -50px;
+    }
+    .google{
+        top: 50%;
+    }
+}
+@media all and (max-width:900px){
+    .letter .input{
+        display: block;
+    }
+    .input{
+        top: 100%;
+        translate: 50% -50%;
+        right: 50%;
+        width: 80%;
+    }
+    .input input{
+        right: 0px;
+        padding-right: 220px;
+        width: 100%;
+        border-top-right-radius: 50px;
+    }
+}
+@media all and (max-width:768px){
+    .bigCircle{
+        top: -150px;
+        left: -350px;
+    }
+    .smallCircle{
+        background-color: #4e4ea1;
+        width: 40%;
+        top: 13%;
+        left:20%;
+    }
+    .imageContainer{
+        right: 0;
+    }
+    .mainTitle, .google{
+        left: 40px;
+    }
+    .connect{
+        width: 100%;
+    }
+    .features .circleContain{
+        width: 60px;
+    }
+    .navbar{
+        align-items: center;
+    }
+    .navMenu{
+        display: none;
+    }
+    .navbar.bg, .navbar.mobileNav .navMenu, .navbar.mobileNav, .navbar.bg .menu, .navbar.mobileNav .menu{
+        background-color: #4e4ea1;
+        color: white;
+    }
+    .navMenu a:hover, .menu{
+        color: #22226a;
+    }
+    .navbar.mobileNav .navMenu{
+        top: 60px;
+        display: block;
+        left: 0;
+        padding: 20px;
+    }
+    .navbar.mobileNav .navMenu a{
+        margin: 10px;
+        width: 100%;
+        display: block;
+    }
+    .footer{
+        background-color: #4e4ea1;
+    }
+    .input input{
+        right: 0px;
+        padding-right: 60px;
+    }
+    .input{
+        top: 100%;
+        translate: 50% -50%;
+        right: 50%;
+        width: calc(100% - 40px);
+    }
+    .input input::placeholder{
+        font-size: 14px;
+    }
+    .circleContain{
+        width: 120px;
+    }
+}
+@media all and (max-width:468px){
+    .logo{
+        margin: 0 auto;
+    }
+    .features .circleContain{
+        width: 30px;
+    }
+}
+.dots{
+    width: 75px;
+    right: -60px;
+    bottom: -60px;
+}
+.dot{
+    width: 12px;
+    background-color:#f4f9ff;
+}
+.dots .dot:nth-child(2){
+    top: 50%;
+    translate: 0 -50%;
+}
+.dots .dot:nth-child(5){
+    left: 50%;
+    translate: -50% 0;
+}
+.roundBorderLightFirst{
+    border: 8px solid #f4f9ff;
+    width: 250px;
+    border-bottom-left-radius: 125px;
+    border-bottom-right-radius: 125px;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    right: -300px;
+    top: -150px;
+}
+.roundBorderLightBiggerFirst{
+    border: 8px solid #f4f9ff;
+    width: 220px;
+    border-top-right-radius: 125px;
+    border-bottom-left-radius: 125px;
+    border-bottom-right-radius: 125px;
+    right: -150px;
+    top: 130px;
+}
+.dots2{
+    width: 300px;
+    top: 0px;
+    right: -250px;
+}
+.dot2{
+    width: 12px;
+    background-color:#f4f9ff;
+}
+.dot2:nth-child(2){
+    top: 30px;
+}
+.dot2:nth-child(3){
+    top: 30px;
+    left: 50px;
+}
+.dot2:nth-child(4){
+    top: 60px;
+    left: 50px;
+}
+.dot2:nth-child(5){
+    top: 60px;
+    left: 90px;
+}
+.dot2:nth-child(6){
+    top: 60px;
+    left: 150px;
+}
+.dot2:nth-child(7){
+    top: 60px;
+    left: 190px;
+}
+.dot2:nth-child(8){
+    top: 100px;
+    left: 150px;
+}
+.dot2:nth-child(9){
+    top: 100px;
+    left: 190px;
+}
+</style>
+<div class="bigContainer oh">
+    <div class="navbar w100 pf l0 z200 ph40">
+            <div class="cw">icon</div>
+            <div class="navMenu fs12 m_w100 m_pa m_t0 m_c">
+                <a href="#" class="ph20 pv10">Smart Life</a>
+                <a href="#" class="ph20 pv10">About</a>
+                <a href="#" class="ph20 pv10">Products</a>
+                <a href="#" class="ph20 pv10">Support</a>
+                <a href="#" class="ph20 pv10">Login</a>
+            </div>
+            <div class="menu h r m_g fs22" id="menu-icon">
+                <span class="iconify" data-icon="mdi:menu"></span>
+            </div>
+    </div>
+    <div class="main oh mhv100">
+        <div class="google w100 sq z10 pa" style="background: url(../images/google-removebg-preview.png);"></div>
+        <h1 class="mainTitle z1 cw pa fs65 w50 l md_fs45 m_fs34 md_w60 tsh60">Intelligent  Solutions For Your Home</h1>
+        <div class="roundBorderBlue sq200 pa z1 m_m_h"></div>
+        <div class="bigCircle sq pa roundc">
+            <div class="smallCircle sq pa roundc">
+                <div class="yellowSmallCircle roundc sq pa r0 m_m_h"></div>
+                <div class="roundBorderPink sq200 pa"></div>
+            </div>
+        </div>
+        <div class="imageContainer fs0 w40 ld_w50 md_w60 m_w80 sq90 p20 pa m_m_w100">
+            <div class="imageContain w50 h100 g, g_nm fs14 ph10 vt">
+                <div class="img borderLeft h100 cov" style="background: url(../images/row-1-column-1.jpg);">
+                    <div class="shadowLeft borderLeft h100 pa w100"></div>
+                    <div class="shadowYellowCircle sq pa roundc m_m_h"></div>
+                </div>
+            </div>
+            <div class="imageContain w50 h100 g, g_nm fs14 ph10 vt mt40">
+                <div class="img borderRight h100 cov" style="background: url(../images/row-1-column-2.jpg);">
+                    <div class="shadowRight borderRight h100 pa w100"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="connect p50 w80 m_w100 m_p20">
+            <h3 class="blueTitle fs22 m_fs18">Let's connect!</h3>
+            <h2 class="purpleTitle pv20 fs40 md_fs26 m_m_fs18 ph100 m_ph50 m_m_ph0">Simplify your smart home  with those features</h2>
+            <div class="circles fs0 pv30">
+                <div class="circleContain fs14">
+                    <div class="circle w100 sq roundc">
+                        <div class="whiteCircle first w40 sq bgw roundc pa"></div>
+                        <div class="iconCircle first roundc w60 sq pa">
+                            <div class="cc fs40 m_fs32 cw"><span class="iconify" data-icon="mdi:sprout"></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="circleContain fs14">
+                    <div class="circle w100 sq roundc">
+                        <div class="whiteCircle second w40 sq bgw roundc pa"></div>
+                        <div class="iconCircle second roundc w60 sq pa">
+                            <div class="cc fs40 m_fs32 cw"><span class="iconify" data-icon="mdi:account-lock-open-outline"></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="circleContain fs14">
+                    <div class="circle w100 sq roundc">
+                        <div class="whiteCircle third w40 sq bgw roundc pa"></div>
+                        <div class="iconCircle third roundc w60 sq pa">
+                            <div class="cc fs40 m_fs32 cw"><span class="iconify" data-icon="mdi:table-furniture"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="lightLeftBlue sq roundc pa"></div>
+            <div class="roundBorderLightFirst sq170 pa m_h"></div>
+            <div class="roundBorderLightBiggerFirst sq170 pa m_h"></div>
+            <table class="standards fs0 mhv80 m_mhv60 mt50 mb50">
+                <td class="standardSection fs14 w50 pr40 m_pr0 m_db m_w80 m_m_w100">
+                    <div class="standardImg w100 sq80" style="background: url(../images/lamp.webp);">
+                        <div class="dots sq pa">
+                            <div class="dot sq roundc pa r0"></div>
+                            <div class="dot sq roundc pa r0"></div>
+                            <div class="dot sq roundc pa r0 b0"></div>
+                            <div class="dot sq roundc pa l0 b0"></div>
+                            <div class="dot sq roundc pa b0"></div>
+                            <div class="dot sq roundc cc"></div>
+                        </div>
+                    </div>
+                </td>
+                <td class="standardSection fs14 w50 pl40 l m_db m_w100 m_pl0">
+                    <h2 class="purpleTitle pv20 fs40 md_fs26 m_m_fs18">Higher standards<br>And all the standards</h2>
+                    <p class="pv50 cb40 fs18 m_fs16 m_m_fs14 n100 m_pv20">We designed this to include everything you need to control your home. Wi-Fi, Bluetooth, Z-Wave, Zigbee, EnOcean, and even Infrared-all built-in Filter I Layout</p>
+                    <button class="ph30 pv15 cw">See how it works</button>
+                </td>
+            </table>
+        </div>
+        <div>
+            <div class="lightRightBlue sq pa roundc m_h"></div>
+            <table class="standards fs0 mhv80 mt50 mb50 m_mhv60">
+                <td class="standardSection fs14 h m_db m_w80 m_m_w100">
+                    <div class="standardImg2 w100 sq80" style="background: url(../images/interaction.jpeg);">
+                        <div class="dots sq pa">
+                            <div class="dot sq roundc pa r0"></div>
+                            <div class="dot sq roundc pa r0"></div>
+                            <div class="dot sq roundc pa r0 b0"></div>
+                            <div class="dot sq roundc pa l0 b0"></div>
+                            <div class="dot sq roundc pa b0"></div>
+                            <div class="dot sq roundc cc"></div>
+                        </div>
+                    </div>
+                </td>
+                <td class="standardSection fs14 w50 pl40 l m_db m_w100 m_pl0">
+                    <h2 class="purpleTitle pv20 fs40 md_fs26 m_m_fs18">Every interaction is much better</h2>
+                    <p class="pv50 cb40 fs18 m_fs16 m_m_fs14 n100 m_pv20">Enjoy control like you've never experienced. An evolved interface and over a thousand new features and interaction enhancements have been thoughtfully redesigned to simplify your smart home.</p>
+                    <button class="ph30 pv15 cw m_fs12">Learn more</button>
+                </td>
+                <td class="standardSection fs14 w50 pl40 m_h">
+                    <div class="standardImg2 w100 sq80" style="background: url(../images/interaction.jpeg);"></div>
+                </td>
+            </table>
+        </div>
+        <div class="download pt50 pb160 oh m_pv50 m_pb50 m_pt0">
+            <div class="shadow1 pa sq200 m_h"></div>
+            <div class="shadow2 pa sq190 m_h"></div>
+            <h2 class="purpleTitle pv20 fs40 md_fs26 m_m_fs18 m_pv0">App or web, your choice</h2>
+            <p class="downloadPar pv50 cb40 fs18 n100 z10 m_pv20 m_fs16 m_m_fs14 ">You can also use the functions of the app through  any web browser with the "H" online portal</p>
+            <div class="downloadBtns">
+                <button class="downloadBtn round4x pl40 pr90 pv15 cw b0 mr8 z10 m_pl10 m_pr20 m_pv10 m_m_w80">
+                    <div class="g, g_nm fs40 pr20 m_fs30"><span class="iconify" data-icon="mdi:google-play"></span></div>
+                    <div class="g, g_nm l">
+                        <p>Android app on</p>
+                        <h2 class="n400 fs30 m_fs20 m_m_fs16">Google Play</h2>
+                    </div>
+                </button>
+                <button class="downloadBtn round3x pl40 pr90 pv15 cw b0 m_mt10 z10 m_pl10 m_pr20 m_pv10 m_m_w80">
+                    <div class="g, g_nm fs40 pr20 m_fs30"><span class="iconify" data-icon="mdi:apple"></span></div>
+                    <div class="g, g_nm l">
+                        <p>Download on the</p>
+                        <h2 class="n400 fs30 m_fs20 m_m_fs16">App Store</h2>
+                    </div>
+                </button>
+            </div>
+        </div>
+        <div class="features pv100 m_pt30">
+            <div class="lightBlueLeftLast sq roundc pa m_h"></div>
+            <div class="roundBorderLight sq170 pa m_h"></div>
+            <div class="roundBorderLightBigger sq170 pa m_h"></div>
+                <h2 class="purpleTitle pv20 fs40 md_fs26 m_m_fs18 l pb100 m_pb30 w50 m_w100">Quick preview of our main features
+                    <div class="dots2 sq40 pa m_h">
+                        <div class="dot2 pa roundc sq"></div>
+                        <div class="dot2 pa roundc sq"></div>
+                        <div class="dot2 pa roundc sq"></div>
+                        <div class="dot2 pa roundc sq"></div>
+                        <div class="dot2 pa roundc sq"></div>
+                        <div class="dot2 pa roundc sq"></div>
+                        <div class="dot2 pa roundc sq"></div>
+                        <div class="dot2 pa roundc sq"></div>
+                        <div class="dot2 pa roundc sq"></div>
+                    </div>
+                </h2>
+                <table class="l w60 md_w100">
+                    <tr>
+                        <td>
+                            <table>
+                                <td class="circleContain fs14 g, g_nm">
+                                    <div class="circle w100 sq roundc mb20">
+                                        <div class="whiteCircle first w30 sq bgw roundc pa"></div>
+                                        <div class="iconCircle first roundc w60 sq pa z1">
+                                            <div class="cc fs32 m_fs18 cw"><span class="iconify" data-icon="mdi:curtains"></span></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="g, g_nm ml5 fs18 m_fs11 mb20">Automatic courtain</td>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                                <td class="circleContain fs14 g, g_nm">
+                                    <div class="circle w100 sq roundc mb20">
+                                        <div class="whiteCircle first w30 sq bgw roundc pa"></div>
+                                        <div class="iconCircle first roundc w60 sq pa z1">
+                                            <div class="cc fs32 m_fs18 cw"><span class="iconify" data-icon="mdi:wifi"></span></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="g, g_nm ml5 fs18 m_fs11 mb20">Wifi router</td>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <table>
+                                <td class="circleContain fs14 g, g_nm">
+                                    <div class="circle w100 sq roundc">
+                                        <div class="whiteCircle first w30 sq bgw roundc pa"></div>
+                                        <div class="iconCircle first roundc w60 sq pa z1">
+                                            <div class="cc fs32 m_fs18 cw"><span class="iconify" data-icon="mdi:outdoor-lamp"></span></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="g, g_nm ml5 fs18 m_fs11">Motion light sensor</td>
+                            </table>
+                        </td>
+                        <td>
+                            <table>
+                                <td class="circleContain fs14 g, g_nm">
+                                    <div class="circle w100 sq roundc">
+                                        <div class="whiteCircle first w30 sq bgw roundc pa"></div>
+                                        <div class="iconCircle first roundc w60 sq pa z1">
+                                            <div class="cc fs32 m_fs18 cw"><span class="iconify" data-icon="mdi:fire-alert"></span></div>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="g, g_nm ml5 fs18 m_fs11">Smoke detector</td>
+                            </table>
+                        </td>
+                    </tr>
+                </table>
+        </div>
+    </div>
+    <div class="homeImgContainer">
+        <div class="homeImg w80 sq40 cov mr50 md_mr20" style="background: url(../images/home.png);">
+            <div class="homeFeature w30 bgb pa">
+                <div class="homefeatureimg w100 cov sq z1" style="background: url(../images/stair.jpeg);"></div>
+                <div class="cw l p30 fs20 n700 md_fs12 m_m_fs9 md_p10">Select the world's finest lighting control system.</div>
+            </div>
+        </div>
+    </div>
+    <div class="footer mhv50 mt50 oh cw">
+        <div class="big pa roundc sq m_h">
+            <div class="small pa roundc sq w60 m_h">
+                <div class="smallBlue roundc w16 sq pa"></div>
+            </div>
+            <div class="bigyellow roundc pa sq m_h"></div>
+        </div>
+        <div class="letter w80 pv60 ph40 cw fs0 m_pv30 m_ph20">
+            <h1 class="g w100 fs28 l m_fs18 m_m_fs16 m_mb10">Newsletter</h1>
+                <div class="input w100 fs28 r pa">
+                    <input class="b0 w50 ph20 h100 pa fs20 n200 m_fs14" type="text" placeholder="Enter your mail here">
+                    <button class="inputBtn cw b0 ph90 h100 m_ph10">Send</button>
+                </div>
+        </div>
+        <div class="footerMenu ph40 pv70 w80 fs0 md_pb20 md_ph20">
+            <div class="leftFooter w80 g, g_nm m_m_w100">
+                <div class="w25 fs14 g, g_nm vt l md_w50 md_mb30 m_m_pr10">
+                    <h3 class="mb20 n400 fs14">Smart Life</h3>
+                    <ul>
+                        <li class="pv10 fs12 m_m_fs10">Whole Home</li>
+                        <li class="pv10 fs12 m_m_fs10 ">Climate Comfort</li>
+                        <li class="pv10 fs12 m_m_fs10">Home Network</li>
+                        <li class="pv10 fs12 m_m_fs10">Home Security</li>
+                    </ul>
+                </div>
+                <div class="w25 fs14 g, g_nm vt l md_w50 md_mb30 m_m_pl10">
+                    <h3 class="mb20 n400 fs14">About</h3>
+                    <ul>
+                        <li class="pv10 fs12 m_m_fs10">Meet The Team</li>
+                        <li class="pv10 fs12 m_m_fs10">Press Releases</li>
+                        <li class="pv10 fs12 m_m_fs10">News</li>
+                        <li class="pv10 fs12 m_m_fs10">Awards</li>
+                    </ul>
+                </div>
+                <div class="w25 fs14 g, g_nm vt l md_w50 m_m_pr10">
+                    <h3 class="mb20 n400 fs14">Products</h3>
+                    <ul>
+                        <li class="pv10 fs12 m_m_fs10">Security Camera</li>
+                        <li class="pv10 fs12 m_m_fs10">Automated Doors</li>
+                        <li class="pv10 fs12 m_m_fs10">Motion Light Sensor</li>
+                    </ul>
+                </div>
+                <div class="w25 fs14 g, g_nm vt l md_w50 m_m_pl10">
+                    <h3 class="mb20 n400 fs14">Support</h3>
+                    <ul>
+                        <li class="pv10 fs12 m_m_fs10">Help</li>
+                        <li class="pv10 fs12 m_m_fs10">Dealer Login</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rightfooter w20 g, g_nm fs14 vt l pl40 md_pl0 m_m_w100 m_m_c">
+                <div class="logo w50 sq con mb10 m_sq170 m_m_sq80" style="background: url(../images/Portfolio___Callie_Cullum_Design-removebg-preview.png);"></div>
+                <p>New York CCJ</p>
+                <p>Central Park, 60</p>
+                <p>108000 Code</p>
+            </div>
+        </div>
+        <div class="bottomfooter w80 fs0 ph40 pv30">
+            <div class="copyright fs10 g l w50 vm m_w100 m_c m_mb10">© 2019 H Inc. All rights reserved.</div>
+            <div class="social g r w50 vm m_w100 m_c">
+                <div class="fs18 g, g_nm"><span class="iconify" data-icon="mdi:facebook"></span></div>
+                <div class="fs18 g, g_nm ph20"><span class="iconify" data-icon="mdi:whatsapp"></span></div>
+                <div class="fs18 g, g_nm"><span class="iconify" data-icon="mdi:skype"></span></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+  $(document).ready(function () {
+    $(window).scroll(function () {
+      var scroll = $(window).scrollTop();
+      var navbar = $(".navbar");
+      if (scroll >= 100) {
+        navbar.addClass("bg");
+      } else {
+        navbar.removeClass("bg");
+      }
+    });
+    const menuIcon = $("#menu-icon");
+    menuIcon.on("click", function () {
+      $(".navbar").toggleClass("mobileNav");
+    });
+  });
+  AOS.init();
+</script>
